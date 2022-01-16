@@ -1,0 +1,62 @@
+{
+  "id": "cc5f60b8-2a65-4a5e-b40b-a9f63321be44",
+  "version": "2.0",
+  "name": "sd",
+  "url": "https://data.enedis.fr",
+  "tests": [{
+    "id": "2642a403-5939-4769-b4cb-6f6c318fc617",
+    "name": "sd",
+    "commands": [{
+      "id": "88d9c1a4-a4da-460b-9ac6-2b2fb8763179",
+      "comment": "",
+      "command": "open",
+      "target": "/pages/accueil/?id=dataviz-consommation-et-production-au-pas-12h",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ddad824-114a-4471-b1aa-633a91c46676",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e433eb59-963c-49e0-b4f4-0fbccc96c19a",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a4d848d-4155-4513-94e8-c7424608c0db",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(1) > .ng-pristine",
+      "targets": [
+        ["css=td:nth-child(1) > .ng-pristine", "css:finder"],
+        ["xpath=//div[@id='page-']/div/div/div/div/div/ods-dataset-context/div/div[3]/div/table/tbody/tr/td/select", "xpath:idRelative"],
+        ["xpath=//td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "737f3a83-5936-4ce9-9bff-5e47b695fbf4",
+      "comment": "",
+      "command": "select",
+      "target": "css=.ng-not-empty",
+      "targets": [],
+      "value": "label=PRO4"
+    }]
+  }],
+  "suites": [{
+    "id": "a0b7bf1c-305a-425e-9033-20bc2744f9a8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2642a403-5939-4769-b4cb-6f6c318fc617"]
+  }],
+  "urls": ["https://data.enedis.fr/"],
+  "plugins": []
+}

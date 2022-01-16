@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.db.models.fields.files import FileField
 # Create your models here.
 class Compte(models.Model):
     identifiant = models.IntegerField(unique = True,null =True)
@@ -11,8 +11,13 @@ class Compte(models.Model):
     connecte = models.BooleanField(null = True)
     email_verifie = models.BooleanField(default = False, null = True)
 
+
 class Entite(models.Model):
     champ = models.CharField(max_length=255)
 
 class PDL(models.Model):
     champ = models.CharField(max_length=255)
+
+class Simulations(models.Model):
+    email = models.EmailField()
+    file = models.FileField()

@@ -1,0 +1,34 @@
+
+</head>
+
+
+<body>
+  <nav>
+    <div class = "logo">
+      <hd>Autoco</hd>
+    </div>
+    <ul class = "nav-links">
+      <li>
+        <a href = "/Accueil">ACCUEIL</a>
+      </li>
+      <li>
+        <a href = "/Profil">PROFIL</a>
+      </li>
+      <li>
+        <a href = "/Accueil">DECONNEXION</a>
+      </li>
+      
+    </ul>
+  </nav>
+  <main>
+    <div  style = "margin-left: auto;margin-right: auto;">
+    <div id="curve_chart1" style="width: 1800px; height: 800px;margin-left: auto;margin-right: auto;"></div>
+    <div id="curve_chart2" style="width: 1800px; height: 800px;margin-left: auto;margin-right: auto;"></div>
+
+        </div>
+  </main>
+  <footer>
+    <a href="mailto:othmane.farah@hotmail.com"><button class="button">Contact</button></a>  
+  </footer>
+</body>
+</html>

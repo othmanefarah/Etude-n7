@@ -29,5 +29,6 @@ urlpatterns = [
     path('Inscription0', views.newUser),
     path('Connexion0', views.login),
     path('Activate',views.activation),
+    path('Simulation',views.simulation),
 ]
 

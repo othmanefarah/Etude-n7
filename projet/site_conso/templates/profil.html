@@ -68,10 +68,7 @@
         font-weight: bold;
         font-size: 14px;
       }
-      .tableau  td{
-        padding : 8px 7px;
-      }
-
+     
 
   </style>
   <meta charset='utf-8'>
@@ -101,7 +98,7 @@
         </ul>
       </nav>
     <main class = "center">
-        <div class ="center-div">
+        <div >
         <td><h3 text_align ="center">
           {{message1}}
         </h3>
@@ -122,7 +119,66 @@
           </h3>
           </td>
           </div>
+
+  <form action="/Simulation" method="post">
+    {% csrf_token%}
+      <table  style="margin : auto;">
+        <td>
+          <p style ="font-size: 25px;font-weight: bold;text-align:center;" >Consommation</p>
+        </td>
+        <tr>
+          <td style ="font-size: 20px;"><p >Code</p></td>
+          <td><input  style = "text-align: center;font-size: 20px;" id="code" type="text" name="code" required placeholder="Code"></td>
+        </tr>
+        <tr>
+          <td style ="font-size: 20px;"><p >Consommation</p></td>
+          <td><input  style = "text-align: center;font-size: 20px;" id="consommation" type="text" name="consommation" required placeholder="Consommation"></td>
+        </tr>
+        <tr>
+          <td style ="font-size: 20px;"><p>Date de fin</p></td>
+          <td ><input  style = "text-align: center;font-size: 20px;" id="datefin" type="date" name="datefin" required placeholder="JJ/MM/AAAA"></td>
+        </tr>
+        <tr>
+          <td style ="font-size: 20px;"><p>Date de début</p></td>
+          <td><input style = "text-align: center;font-size: 20px;" id="datedebut" type="date" name="datedebut" required placeholder="JJ/MM/AAAA"></td>
+        </tr>
+        <br></br>
+        <td>
+          <p style ="font-size: 25px;font-weight: bold;text-align:center;" >Production</p>
+        </td>
+        <tr>
+          <td style ="font-size: 20px;"><p >latitude</p></td>
+          <td><input  style = "text-align: center;font-size: 20px;" id="latitude" type="text" name="latitude" required placeholder="latitude"></td>
+        </tr>
+        <tr>
+          <td style ="font-size: 20px;"><p >longitude</p></td>
+          <td><input  style = "text-align: center;font-size: 20px;" id="longitude" type="text" name="longitude" required placeholder="longitude"></td>
+        </tr>
+        <tr>
+          <td style ="font-size: 20px;"><p >Rayonnement Solaire</p></td>
+          <td><input  style = "text-align: center;font-size: 20px;" id="rayo" type="text" name="rayo" required placeholder="Rayonnement Solaire"></td>
+        </tr>
+        <tr>
+          <td style ="font-size: 20px;"><p>Année de fin</p></td>
+          <td ><input  style = "text-align: center;font-size: 20px;" id="datefin1" type="text" name="datefin1" required placeholder="AAAA"></td>
+        </tr>
+        <tr>
+          <td style ="font-size: 20px;"><p>Année de début</p></td>
+          <td><input style = "text-align: center;font-size: 20px;" id="datedebut1" type="text" name="datedebut1" required placeholder="AAAA"></td>
+        </tr>
+        <tr>
+          <td style ="font-size: 20px;"><p >inclinaison</p></td>
+          <td><input  style = "text-align: center;font-size: 20px;" id="inclinaison" type="text" name="inclinaison" required placeholder="inclinaison"></td>
+        </tr>
+        <tr>
+          <td style ="font-size: 20px;"><p >azimut</p></td>
+          <td><input  style = "text-align: center;font-size: 20px;" id="azimut" type="text" name="azimut" required placeholder="azimut"></td>
+        </tr>
+      </table>
+      <td><button style ="font-size: 20px;left:50%;position:absolute;margin-bottom: 5px;" type="submit" name="submit" id="submit">Calcul</button></td>
+    </form>
   </main>
+
   <footer>
     <a href="mailto:othmane.farah@hotmail.com"><button class="button">CONTACT</button></a>  
   </footer>
